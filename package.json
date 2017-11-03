@@ -1,0 +1,32 @@
+{
+    "name": "p1-mqtt-domoticz",
+    "version": "1.0.0",
+    "description": "Node.js package for reading and parsing data from the P1 port of a Dutch Smart Meter (slimme meter) and passing that via MQTT to another client who is running Domoticz and configured to listen for these events.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "p1-reader": "^1.4.1",
+        "domoticz-mqtt": "https://github.com/Webunity/domoticz-mqtt.git"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Webunity/p1-mqtt-domoticz.git"
+    },
+    "keywords": [
+        "Domoticz",
+        "MQTT",
+        "JSON",
+        "API",
+        "Home Automation",
+        "Smart meter",
+        "Slimme meter"
+    ],
+    "author": "Gilles van den Hoven",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Webunity/p1-mqtt-domoticz/issues"
+    },
+    "homepage": "https://github.com/Webunity/p1-mqtt-domoticz#readme"
+}
