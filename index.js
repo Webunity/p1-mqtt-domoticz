@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 var domoticzMqtt = require('domoticz-mqtt'),
     P1Reader = require('p1-reader');
 

@@ -1,0 +1,14 @@
+[Unit]
+Description=Node.js package for reading and parsing data from the P1 port of a Dutch Smart Meter (slimme meter) and passing that via MQTT to another client who is running Domoticz and configured to listen for these events.
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/opt/p1monitor/index.js
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=control-group
+Restart=always
+WorkingDirectory=/opt/p1monitor
+
+[Install]
+WantedBy=multi-user.target
